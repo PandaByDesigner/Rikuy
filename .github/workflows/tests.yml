@@ -42,4 +42,7 @@ jobs:
         run: python -m py_compile rikuy.py
 
       - name: Run unit tests
+        env:
+          TEMP: ${{ runner.temp }}
+          TMP: ${{ runner.temp }}
         run: python -m unittest discover -s tests -v
