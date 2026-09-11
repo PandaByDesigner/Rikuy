@@ -4,6 +4,12 @@
   <img src="Rikuy_Condor_Icon.ico" alt="Rikuy condor icon" width="160">
 </p>
 
+<p align="center">
+  <a href="https://github.com/PandaByDesigner/Rikuy/actions/workflows/tests.yml"><img alt="Tests" src="https://github.com/PandaByDesigner/Rikuy/actions/workflows/tests.yml/badge.svg"></a>
+  <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg"></a>
+  <img alt="Python 3.9+" src="https://img.shields.io/badge/Python-3.9%2B-blue.svg">
+</p>
+
 Rikuy! is a Windows-first PyQt6 webcam viewer built on OpenCV, with native
 Linux Video4Linux2 support. It scans for available cameras, restores the last
 selected camera and resolution, and presents a responsive live-preview layout
@@ -29,7 +35,7 @@ when the window is narrow, and remains available in fullscreen use.
 ## Requirements
 
 - Windows or Linux
-- Python 3 with `pip`
+- Python 3.9 or newer with `pip`
 - A webcam available to the operating system
 
 ## Setup
@@ -127,6 +133,17 @@ Automated tests cannot reproduce every driver or device behavior. Real Windows
 camera validation still matters for DirectShow and Media Foundation fallback,
 startup and refresh, camera or resolution switching, unplug/replug behavior,
 and clean shutdown.
+
+## License and branding
+
+Rikuy's source code is open source under the [MIT License](LICENSE). You are
+free to use, modify, redistribute, and incorporate the code into other projects
+under that license.
+
+The **Rikuy** name and condor logo remain ByDSGN branding and are not included
+in the MIT license grant. Forks and redistributed modified versions should use
+a different product name and logo unless ByDSGN has explicitly granted
+permission. See [BRANDING.md](BRANDING.md) for details.
 
 ## Troubleshooting
 
